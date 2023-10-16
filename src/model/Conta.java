@@ -26,6 +26,10 @@ public abstract class Conta {
 
     public abstract boolean sacar(double valor);
 
+    public void transferir(Conta conta, double valor){
+        conta.saldo = conta.getSaldo() + valor;
+    }
+
     public int getAgencia() {
         return agencia;
     }
