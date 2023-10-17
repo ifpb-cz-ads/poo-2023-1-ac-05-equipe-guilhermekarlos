@@ -19,7 +19,6 @@ public abstract class Conta {
     }
 
     public boolean depositar(double valor){
-        //TODO: Verificar problemas no preenchimento
         saldo += valor;
         return true;
     }

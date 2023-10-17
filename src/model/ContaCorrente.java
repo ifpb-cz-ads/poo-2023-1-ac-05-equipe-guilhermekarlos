@@ -13,7 +13,6 @@ public class ContaCorrente extends Conta{
 
     @Override
     public boolean sacar(double valor){
-        //TODO: Verificar as restrições
         if(valor <= saldo+getCliente().getLimiteCredito()){
             saldo -= valor;
             return true;
